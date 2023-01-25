@@ -48,7 +48,7 @@ dcmd任务的cb链由n+2个cb组成，编号为-1,0,1,2......n，在方块实体
 以下为复合标签描述自定义cb的格式：
 
 ```mcfunction
-{type:"enchant"},{type:"cmd",cmd:""},{type:"trans",get_string:0,trans_string:2,pre_name:[],set_name:[]}
+[{type:"enchant"},{type:"cmd",cmd:""},{type:"trans",get_string:0,trans_string:2,pre_name:[],set_name:[]}]
 ```
 
 enchant命令方块用于处理实体的CustomName，获得拍扁后的命令方块。
