@@ -6,13 +6,13 @@ execute store result score sres int run data get storage dcmd:io free_addr[0]
 data remove storage dcmd:io free_addr[0]
 
 #将地址转换为坐标，并返回到执行者位置
-scoreboard players operation stempz int = res int
-scoreboard players operation stempx int = res int
+scoreboard players operation stempz int = sres int
+scoreboard players operation stempx int = sres int
 scoreboard players operation stempz int /= 6144 int
 execute store result entity @s Pos[2] double 1 run scoreboard players add stempz int 8592
 
 scoreboard players operation stempx int %= 6144 int
-scoreboard players operation stempy int = tempx int
+scoreboard players operation stempy int = stempx int
 scoreboard players operation stempy int /= 16 int
 scoreboard players operation stempx int %= 16 int
 execute store result entity @s Pos[1] double 1 run scoreboard players remove stempy int 64

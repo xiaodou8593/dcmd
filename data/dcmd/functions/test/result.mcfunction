@@ -1,0 +1,1 @@
+tellraw @a {"nbt":"result","storage":"dcmd:io"}
