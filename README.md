@@ -264,7 +264,7 @@ function dcmd:_new
 又可以写为：
 
 ```mcfunction
-data modify storage dcmd:io input.run_space.pos set from entity @s Pos
+data modify storage dcmd:io run_space.pos set from entity @s Pos
 function dcmd:_reset
 
 function dcmd:_setas
